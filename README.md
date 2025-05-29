@@ -34,6 +34,7 @@ Before running the project, ensure you have the following installed:
 
 Set Up a Virtual Environment (recommended):
 python -m venv venv
+
 venv\Scripts\activate
 
 
