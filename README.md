@@ -56,68 +56,6 @@ Verify Installation:
 Run python -c "import talib; print(talib.__version__)" to confirm TA-Lib is installed.
 
 
-
-Project Structure
-The repository is organized as follows:
-FinancialDataAnalysis/
-├── data/
-│   └── yfinance_data/
-│       ├── AAPL_historical_data.csv
-│       ├── AMZN_historical_data.csv
-│       ├── GOOG_historical_data.csv
-│       ├── META_historical_data.csv
-│       ├── MSFT_historical_data.csv
-│       ├── NVDA_historical_data.csv
-│       ├── TSLA_historical_data.csv
-│       └── raw_analyst_ratings.csv
-├── notebooks/
-│   ├── AAPL_quantitative_analysis.ipynb
-│   ├── AMZN_quantitative_analysis.ipynb
-│   ├── GOOG_quantitative_analysis.ipynb
-│   ├── META_quantitative_analysis.ipynb
-│   ├── MSFT_quantitative_analysis.ipynb
-│   ├── NVDA_quantitative_analysis.ipynb
-│   ├── TSLA_quantitative_analysis.ipynb
-│   └── visualizations/
-│       ├── AAPL/
-│       │   ├── aapl_close_sma.png
-│       │   ├── aapl_rsi.png
-│       │   ├── aapl_macd.png
-│       │   └── aapl_cumulative_returns.png
-│       ├── AMZN/
-│       │   ├── amzn_close_sma.png
-│       │   ├── amzn_rsi.png
-│       │   ├── amzn_macd.png
-│       │   └── amzn_cumulative_returns.png
-│       ├── GOOG/
-│       │   ├── goog_close_sma.png
-│       │   ├── goog_rsi.png
-│       │   ├── goog_macd.png
-│       │   └── goog_cumulative_returns.png
-│       ├── META/
-│       │   ├── meta_close_sma.png
-│       │   ├── meta_rsi.png
-│       │   ├── meta_macd.png
-│       │   └── meta_cumulative_returns.png
-│       ├── MSFT/
-│       │   ├── msft_close_sma.png
-│       │   ├── msft_rsi.png
-│       │   ├── msft_macd.png
-│       │   └── msft_cumulative_returns.png
-│       ├── NVDA/
-│       │   ├── nvda_close_sma.png
-│       │   ├── nvda_rsi.png
-│       │   ├── nvda_macd.png
-│       │   └── nvda_cumulative_returns.png
-│       └── TSLA/
-│           ├── tsla_close_sma.png
-│           ├── tsla_rsi.png
-│           ├── tsla_macd.png
-│           └── tsla_cumulative_returns.png
-├── .gitignore
-├── README.md
-└── requirements.txt
-
 Key Files and Folders
 
 data/yfinance_data/: Contains historical stock data CSV files downloaded from yfinance or another source, along with raw_analyst_ratings.csv for potential future analysis.
@@ -144,57 +82,6 @@ Calculate TA-Lib indicators (20-day SMA, 14-day RSI, MACD).
 Compute financial metrics (daily returns, annualized volatility, cumulative returns).
 Display a Key Results Summary table with the latest values.
 Generate and display four plots, saved to notebooks/visualizations/STOCK/.
-
-
-
-
-Expected Output:
-
-Console Output: Annualized volatility (e.g., 0.4428 for AAPL) and a summary table.
-Plots: Four images per stock (Close Price with SMA, RSI, MACD, Cumulative Returns) displayed in the notebook and saved.
-
-
-
-Example Output (AAPL)
-Annualized Volatility: 0.4428
-
-=== Key Results Summary ===
-   Latest Close Price  20-Day SMA  RSI (14)  MACD  MACD Signal  MACD Histogram  Latest Daily Return  Cumulative Return  Annualized Volatility
-Value           150.25     145.50    65.20  2.10        1.80          0.30             0.0150           0.5000              0.4428
-
-
-Plots saved as notebooks/visualizations/AAPL/aapl_close_sma.png, etc.
-
-Contributing
-Contributions are welcome! To contribute:
-
-Fork the Repository:
-Create a personal fork on GitHub.
-
-
-Create a Branch:
-Use a descriptive branch name (e.g., feature/add-new-stock).
-Example:git checkout -b feature/add-new-stock
-
-
-
-
-Make Changes:
-Add new notebooks, update data, or enhance analysis.
-
-
-Commit Changes:
-Commit with clear messages:git add .
-git commit -m "Add analysis for new stock XYZ"
-
-
-
-
-Push and Submit a Pull Request:
-Push to your fork:git push origin feature/add-new-stock
-
-
-Open a pull request from your fork to the main repository’s main branch.
 
 
 
