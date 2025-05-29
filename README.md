@@ -32,20 +32,22 @@ Before running the project, ensure you have the following installed:
    cd FinancialDataAnalysis
 
 
-Set Up a Virtual Environment (recommended):
+## Set Up a Virtual Environment (recommended):
 
 python -m venv venv
 
 venv\Scripts\activate
 
 
-Install Dependencies:
+## Install Dependencies:
 
 Install standard packages via pip:pip install pandas numpy matplotlib seaborn
 
 
 Install TA-Lib (note: TA-Lib requires a precompiled wheel for Windows due to its C dependencies):
+
 Download the appropriate wheel for Python 3.13 from Unofficial Windows Binaries.
+
 Example command (adjust path and version as needed):pip install TA_Lib‑0.4.24‑cp313‑cp313‑win_amd64.whl
 
 
@@ -53,7 +55,7 @@ Example command (adjust path and version as needed):pip install TA_Lib‑0.4.24�
 
 
 
-Verify Installation:
+## Verify Installation:
 
 Run python -c "import talib; print(talib.__version__)" to confirm TA-Lib is installed.
 
@@ -67,8 +69,7 @@ notebooks/visualizations/STOCK/: Stores stock-specific plots (e.g., AAPL/aapl_cl
 README.md: This file, providing project documentation.
 requirements.txt: List of Python dependencies (to be created with pip freeze > requirements.txt after installation).
 
-Usage
-Running the Analysis
+
 
 Open VS Code:
 
@@ -76,7 +77,7 @@ Launch VS Code and open the FinancialDataAnalysis folder (File > Open Folder).
 Select the Python 3.13.3 interpreter (Ctrl + Shift + P, "Python: Select Interpreter").
 
 
-Run a Notebook:
+## Run a Notebook:
 
 Open a notebook (e.g., AAPL_quantitative_analysis.ipynb).
 Run all cells (Ctrl + Enter or click "Run Cell") to:
@@ -87,13 +88,13 @@ Generate and display four plots, saved to notebooks/visualizations/STOCK/.
 
 
 
-Guidelines
+## Guidelines
 
 Follow the existing code structure and naming conventions.
 Ensure plots are saved in the appropriate visualizations/STOCK/ folder.
 Update this README if adding significant features.
 
-License
+## License
 This project is licensed under the MIT License. See the LICENSE file for details. (Note: Create a LICENSE file with MIT License text if not already present.)
 Acknowledgments
 
@@ -102,5 +103,5 @@ Pandas/Numpy: For data manipulation and financial calculations (https://pandas.p
 Matplotlib/Seaborn: For data visualization (https://matplotlib.org/, https://seaborn.pydata.org/).
 yfinance: For providing historical stock data (assumed as the data source).
 
-Contact
+## Contact
 For questions or suggestions, please open an issue on the GitHub repository or contact the maintainer at [yaredgenanaw99@gmail.com]. 
