@@ -45,3 +45,4 @@ for stock_file in stock_files:
 
         # Save processed data
         stock_df.to_csv(f'C:/Users/Skyline/financial-news-analysis/data/processed/{stock_file}', index=False)
+        # Print completion message
